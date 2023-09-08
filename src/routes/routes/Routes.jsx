@@ -5,6 +5,7 @@ import Home from "../../pages/home/Home";
 import Login from "../../pages/login/Login";
 import Register from "../../pages/register/Register";
 import ResetPassword from "../../pages/resetPassword/ResetPassword";
+import Contact from "../../pages/contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "reset",
         element: <ResetPassword />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },
