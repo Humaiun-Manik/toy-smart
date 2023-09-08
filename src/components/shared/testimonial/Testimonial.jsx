@@ -5,7 +5,7 @@ import { FaQuoteRight } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
-    <div className="my-24">
+    <div className="my-24 max-w-screen-2xl mx-auto">
       <div className="text-center">
         <h2 className="text-3xl text-[#333333] font-bold mb-3">Customer Testimonials</h2>
         <p className="text-[#70be4e] text-lg">What Clients Says</p>
