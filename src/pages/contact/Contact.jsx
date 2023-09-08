@@ -50,7 +50,7 @@ const Contact = () => {
               <input type="text" placeholder="Subject" className="input input-bordered mb-3" required />
               <textarea className="textarea textarea-bordered textarea-lg w-full"></textarea>
               <input
-                className="w-44 text-white text-lg font-semibold uppercase bg-[#fbbc05] py-3 rounded-full mt-5"
+                className="w-44 text-white text-lg font-semibold uppercase bg-[#fbbc05] py-3 rounded-full mt-5 hover:bg-[#70be4e] duration-300"
                 type="submit"
                 value="send message"
               />
