@@ -1,0 +1,7 @@
+.social-icons {
+  display: none;
+}
+
+.employee:hover .social-icons {
+  display: block;
+}
