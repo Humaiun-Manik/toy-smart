@@ -8,6 +8,8 @@ import ResetPassword from "../../pages/resetPassword/ResetPassword";
 import Contact from "../../pages/contact/Contact";
 import About from "../../pages/about/About";
 import AllProduct from "../../pages/allProduct/AllProduct";
+import ProductDetails from "../../pages/productDetails/ProductDetails";
+import Blogs from "../../pages/blog/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,22 @@ const router = createBrowserRouter([
         element: <AllProduct />,
       },
       {
+        path: "product-details/:id",
+        element: <ProductDetails />,
+      },
+      {
+        path: "blog",
+        element: <Blogs />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
         path: "register",
         element: <Register />,
       },
@@ -33,14 +51,6 @@ const router = createBrowserRouter([
       {
         path: "reset",
         element: <ResetPassword />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
       },
     ],
   },
