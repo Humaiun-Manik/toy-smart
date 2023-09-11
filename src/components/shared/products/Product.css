@@ -1,0 +1,7 @@
+.related-img {
+  transition: 0.7s;
+}
+.product:hover .related-img {
+  margin-top: -50px;
+  visibility: visible;
+}

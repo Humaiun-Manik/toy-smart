@@ -16,7 +16,7 @@ const Questions = () => {
         </div>
         <div>
           <div className="collapse collapse-plus">
-            <input type="radio" name="my-accordion-3" checked="checked" />
+            <input type="radio" name="my-accordion-3" />
             <div className="collapse-title text-xl font-medium">
               What is the age range of toys available in the store?
             </div>

@@ -8,7 +8,7 @@ const Header = () => {
         <Link to={"/"}>Home</Link>
       </li>
       <li className="text-xl">
-        <Link to={"/shop"}>Shop</Link>
+        <Link to={"/products"}>Shop</Link>
       </li>
       <li className="text-xl">
         <Link to={"/blog"}>Blog</Link>

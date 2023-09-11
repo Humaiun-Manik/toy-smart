@@ -1,0 +1,159 @@
+[
+  {
+    "_id": "B001",
+    "name": "Colorful Sensory Ball",
+    "img": "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
+    "title": "Introduce your baby to sensory play with our Soft Plush Ball. Suitable for ages 0-15 months, this cuddly and tactile toy provides hours of entertainment.",
+    "category": "Baby Balls",
+    "price": 9.99,
+    "age": 12,
+    "available": 10,
+    "description": "Our Soft Plush Ball is designed to stimulate your baby's senses. It's made from ultra-soft, hypoallergenic materials, making it safe for cuddling and play. The different textures and gentle rattle inside the ball provide sensory exploration. Perfect for little hands, this ball encourages motor skill development and sensory play.",
+    "reviews": [
+      {
+        "username": "Parent123",
+        "rating": 5,
+        "comment": "My baby loves this plush ball! It's soft and easy for little hands to hold."
+      },
+      {
+        "username": "HappyMom",
+        "rating": 4,
+        "comment": "Great toy for sensory development. The rattle sound keeps my baby engaged."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
+      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
+    ]
+  },
+  {
+    "_id": "B002",
+    "name": "Soft Plush Ball",
+    "img": "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+    "title": "Delight your baby with our Colorful Sensory Ball Set. Designed for ages 0-15 months, this set of textured and vibrant balls is perfect for sensory development.",
+    "category": "Sensory Toys",
+    "price": 19.99,
+    "age": 9,
+    "available": 8,
+    "description": "Our Colorful Sensory Ball Set includes a variety of textured balls in different shapes and sizes, all made from safe, BPA-free materials. These balls are designed to engage your baby's senses, from touch to sight and sound. Perfectly sized for little hands, they encourage motor skills and sensory exploration.",
+    "reviews": [],
+    "relatedImg": [
+      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
+      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
+    ]
+  },
+  {
+    "_id": "B003",
+    "name": "Giggle and Roll Ball",
+    "img": "https://i.ibb.co/DYv2THB/4556931-4387.jpg",
+    "title": "Watch your baby giggle with our Giggle and Roll Ball. Suitable for ages 0-15 months, this interactive ball provides endless entertainment.",
+    "category": "Interactive Toys",
+    "price": 14.99,
+    "age": 6,
+    "available": 12,
+    "description": "Our Giggle and Roll Ball is designed to keep your baby entertained. When rolled, it produces amusing sounds and lights up, captivating your baby's attention. Its easy-grasp design is perfect for tiny hands. This interactive ball promotes sensory development and encourages crawling and chasing, making it a must-have for playtime.",
+    "reviews": [
+      {
+        "username": "PlaytimePro",
+        "rating": 3,
+        "comment": "My baby can't get enough of this ball! The giggles are priceless."
+      },
+      {
+        "username": "FirstTimeMom",
+        "rating": 4,
+        "comment": "Fun interactive toy. My baby enjoys chasing after it and playing with the lights."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
+      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
+    ]
+  },
+  {
+    "_id": "BC001",
+    "name": "Colorful Baby Car",
+    "img": "https://i.ibb.co/YBm1rtV/1361474-195.jpg",
+    "title": "Introduce your baby to a world of fun with our Colorful Baby Car. Suitable for ages 0-15 months, this adorable toy car will spark your baby's imagination.",
+    "category": "Baby Cars",
+    "price": 12.99,
+    "age": 12,
+    "available": 10,
+    "description": "Our Colorful Baby Car is designed to provide endless entertainment for your little one. With vibrant colors and a cute design, it's perfect for imaginative play. Made from safe materials, it's ideal for teething infants. The easy-to-grasp handle promotes motor skills, and the rolling wheels keep your baby engaged in play.",
+    "reviews": [
+      {
+        "username": "HappyParent",
+        "rating": 5,
+        "comment": "My baby loves this little car! It's easy for tiny hands to hold, and the colors are so appealing."
+      },
+      {
+        "username": "ToyFanatic",
+        "rating": 4,
+        "comment": "A great toy for introducing colors and encouraging motor skills. My baby enjoys pushing it around."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/YBm1rtV/1361474-195.jpg",
+      "https://i.ibb.co/W2YN906/3093272-34796.jpg",
+      "https://i.ibb.co/NFz1Mfh/4980943-50926.jpg"
+    ]
+  },
+  {
+    "_id": "BC002",
+    "name": "Interactive Baby Car",
+    "img": "https://i.ibb.co/W2YN906/3093272-34796.jpg",
+    "title": "Engage your baby's senses with our Interactive Baby Car. Suitable for ages 0-15 months, this car is loaded with sensory features and fun activities.",
+    "category": "Interactive Toys",
+    "price": 19.99,
+    "age": 15,
+    "available": 8,
+    "description": "Our Interactive Baby Car is designed to provide a multisensory experience for your baby. It features colorful buttons, lights, and sounds to captivate your baby's attention. The soft, textured wheels are perfect for teething, and the interactive features encourage exploration. This car is a great companion for your baby's sensory development journey.",
+    "reviews": [
+      {
+        "username": "SensoryExplorer",
+        "rating": 5,
+        "comment": "This car is fantastic for stimulating my baby's senses. The lights and sounds are a hit!"
+      },
+      {
+        "username": "MomOfMany",
+        "rating": 4,
+        "comment": "My baby enjoys pressing the buttons and listening to the fun sounds. It's a great interactive toy."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/YBm1rtV/1361474-195.jpg",
+      "https://i.ibb.co/W2YN906/3093272-34796.jpg",
+      "https://i.ibb.co/NFz1Mfh/4980943-50926.jpg"
+    ]
+  },
+  {
+    "_id": "BC003",
+    "name": "Baby Race Car Set",
+    "img": "https://i.ibb.co/NFz1Mfh/4980943-50926.jpg",
+    "title": "Let your baby enjoy a race with our Baby Race Car Set. Suitable for ages 0-15 months, this set includes colorful cars for imaginative play.",
+    "category": "Play Sets",
+    "price": 24.99,
+    "age": 9,
+    "available": 15,
+    "description": "Our Baby Race Car Set is perfect for little racers. The set includes three colorful cars, each designed to be easy to grasp and push. Your baby can enjoy races and adventures while developing motor skills. These cars are made from safe materials and provide hours of racing fun.",
+    "reviews": [
+      {
+        "username": "RaceEnthusiast",
+        "rating": 5,
+        "comment": "My baby loves these little race cars! They're durable and perfect for racing around."
+      },
+      {
+        "username": "ParentingPro",
+        "rating": 4,
+        "comment": "Great addition to our baby's toy collection. These cars provide endless entertainment."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/YBm1rtV/1361474-195.jpg",
+      "https://i.ibb.co/W2YN906/3093272-34796.jpg",
+      "https://i.ibb.co/NFz1Mfh/4980943-50926.jpg"
+    ]
+  }
+]
