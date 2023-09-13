@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
 import SubHeader from "../../components/shared/subHeader/SubHeader";
 import Product from "../../components/shared/products/Product";
+import { useLoaderData } from "react-router-dom";
 
 const AllProduct = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+  const products = useLoaderData();
 
   return (
     <div className="max-w-screen-2xl px-5 mx-auto">
