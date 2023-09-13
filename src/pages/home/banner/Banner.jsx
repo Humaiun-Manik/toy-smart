@@ -15,7 +15,7 @@ const Banner = () => {
                 </h3>
                 <h1 className="my-5 text-7xl text-[#333333] font-extrabold uppercase">One box toy</h1>
                 <p className="text-xl">Flat 10% off on order above $29.99</p>
-                <Link to={"/shop"}>
+                <Link to={"/products"}>
                   <button className="btn uppercase text-white text-xl bg-[#70be4e] px-7 rounded-full mt-10 hover:bg-[#fbbd07] duration-300">
                     Shop now <TbArrowBigRightLines className="ms-2" />
                   </button>

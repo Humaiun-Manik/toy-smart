@@ -13,10 +13,9 @@ const Product = ({ product }) => {
     <div className="card card-compact product overflow-hidden">
       <Link to={`/product-details/${_id}`}>
         <figure>
-          <img src={image} alt="" />
+          <img className="md:h-80" src={image} alt="" />
         </figure>
       </Link>
-
       <div className="card-body h-40">
         <div className="related-img absolute w-full">
           <div className="flex justify-center">

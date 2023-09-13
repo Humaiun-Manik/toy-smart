@@ -1,10 +1,38 @@
 [
   {
+    "_id": "CY003",
+    "name": "Pedal Power Bike",
+    "img": "https://i.ibb.co/Vx3GY8B/32352755-7932878.jpg",
+    "title": "Take the next step in cycling with our Pedal Power Bike. Suitable for ages 3-5 years, this bike prepares kids for pedaling adventures.",
+    "category": "new-arrivals",
+    "price": 89.99,
+    "age": 60,
+    "available": 8,
+    "description": "The Pedal Power Bike is designed for young riders who are ready to learn pedaling. It features training wheels for stability and a comfortable saddle. This bike promotes coordination and prepares kids for the transition to a full-sized bicycle. It's a great step toward independent cycling.",
+    "reviews": [
+      {
+        "username": "CyclingStar",
+        "rating": 5,
+        "comment": "Our child is thrilled with this bike! It's the perfect step from a balance bike to a pedal bike. Highly recommended."
+      },
+      {
+        "username": "BikeEnthusiast",
+        "rating": 4,
+        "comment": "A solid pedal bike that helps kids learn to ride independently. We're very satisfied with this purchase."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/2nFPhyf/32352739-7932329.jpg",
+      "https://i.ibb.co/ngYTZS6/32352746-7932667.jpg",
+      "https://i.ibb.co/Vx3GY8B/32352755-7932878.jpg"
+    ]
+  },
+  {
     "_id": "B001",
     "name": "Colorful Sensory Ball",
     "img": "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
     "title": "Introduce your baby to sensory play with our Soft Plush Ball. Suitable for ages 0-15 months, this cuddly and tactile toy provides hours of entertainment.",
-    "category": "Baby Balls",
+    "category": "feature",
     "price": 9.99,
     "age": 12,
     "available": 10,
@@ -28,56 +56,11 @@
     ]
   },
   {
-    "_id": "B002",
-    "name": "Soft Plush Ball",
-    "img": "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
-    "title": "Delight your baby with our Colorful Sensory Ball Set. Designed for ages 0-15 months, this set of textured and vibrant balls is perfect for sensory development.",
-    "category": "Sensory Toys",
-    "price": 19.99,
-    "age": 9,
-    "available": 8,
-    "description": "Our Colorful Sensory Ball Set includes a variety of textured balls in different shapes and sizes, all made from safe, BPA-free materials. These balls are designed to engage your baby's senses, from touch to sight and sound. Perfectly sized for little hands, they encourage motor skills and sensory exploration.",
-    "reviews": [],
-    "relatedImg": [
-      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
-      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
-      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
-    ]
-  },
-  {
-    "_id": "B003",
-    "name": "Giggle and Roll Ball",
-    "img": "https://i.ibb.co/DYv2THB/4556931-4387.jpg",
-    "title": "Watch your baby giggle with our Giggle and Roll Ball. Suitable for ages 0-15 months, this interactive ball provides endless entertainment.",
-    "category": "Interactive Toys",
-    "price": 14.99,
-    "age": 6,
-    "available": 12,
-    "description": "Our Giggle and Roll Ball is designed to keep your baby entertained. When rolled, it produces amusing sounds and lights up, captivating your baby's attention. Its easy-grasp design is perfect for tiny hands. This interactive ball promotes sensory development and encourages crawling and chasing, making it a must-have for playtime.",
-    "reviews": [
-      {
-        "username": "PlaytimePro",
-        "rating": 3,
-        "comment": "My baby can't get enough of this ball! The giggles are priceless."
-      },
-      {
-        "username": "FirstTimeMom",
-        "rating": 4,
-        "comment": "Fun interactive toy. My baby enjoys chasing after it and playing with the lights."
-      }
-    ],
-    "relatedImg": [
-      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
-      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
-      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
-    ]
-  },
-  {
     "_id": "BC001",
     "name": "Colorful Baby Car",
     "img": "https://i.ibb.co/YBm1rtV/1361474-195.jpg",
     "title": "Introduce your baby to a world of fun with our Colorful Baby Car. Suitable for ages 0-15 months, this adorable toy car will spark your baby's imagination.",
-    "category": "Baby Cars",
+    "category": "feature",
     "price": 12.99,
     "age": 12,
     "available": 10,
@@ -101,11 +84,224 @@
     ]
   },
   {
+    "_id": "BB001",
+    "name": "Cuddly Teddy Bear",
+    "img": "https://i.ibb.co/Px6sKD6/4-e7f07674-6c08-4c10-8f14-8161370e8507-1024x1024.webp",
+    "title": "Introduce your baby to the joy of cuddling with our Cuddly Teddy Bear. Suitable for ages 0-15 months, this adorable bear will be your baby's new best friend.",
+    "category": "feature",
+    "price": 19.99,
+    "age": 12,
+    "available": 10,
+    "description": "Our Cuddly Teddy Bear is designed to provide comfort and companionship for your little one. With its soft, huggable fur and friendly face, it's perfect for cuddling during naptime and playtime. Made from safe materials, it's ideal for infants. This bear is a cherished addition to your baby's early years.",
+    "reviews": [
+      {
+        "username": "HappyParent",
+        "rating": 5,
+        "comment": "This teddy bear is incredibly soft, and my baby loves hugging it. It's become a constant companion."
+      },
+      {
+        "username": "TeddyLover",
+        "rating": 4,
+        "comment": "A classic teddy bear that brings comfort to my baby. Great quality and cute design."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/Px6sKD6/4-e7f07674-6c08-4c10-8f14-8161370e8507-1024x1024.webp",
+      "https://i.ibb.co/kKWN0LP/5-e027c36d-cba6-49a2-9011-a5bef839f15b-large.webp",
+      "https://i.ibb.co/WshvPCg/1-large.webp"
+    ]
+  },
+  {
+    "_id": "SH001",
+    "name": "Skip Hop Tummy Time Mat",
+    "img": "https://i.ibb.co/0fv54z9/6-ba9c55b7-522b-431e-b2ad-2f204024b8bc-1024x1024.webp",
+    "title": "Introduce your baby to the joys of tummy time with the Skip Hop Tummy Time Mat. Suitable for ages 0-15 months, this mat encourages early development.",
+    "category": "feature",
+    "price": 29.99,
+    "age": 3,
+    "available": 10,
+    "description": "The Skip Hop Tummy Time Mat is designed to provide a comfortable and stimulating surface for your baby's tummy time activities. It features colorful graphics, textures, and a crinkly surface to keep your baby engaged. This mat supports your baby's development of neck and upper body strength.",
+    "reviews": [
+      {
+        "username": "HappyParent",
+        "rating": 5,
+        "comment": "This tummy time mat is fantastic! My baby enjoys tummy time now, and the textures are so intriguing."
+      },
+      {
+        "username": "DevelopmentExpert",
+        "rating": 4,
+        "comment": "A great tool for promoting tummy time and strengthening my baby's muscles. The crinkly part is a hit!"
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/0fv54z9/6-ba9c55b7-522b-431e-b2ad-2f204024b8bc-1024x1024.webp",
+      "https://i.ibb.co/PwWD34d/8-large.webp",
+      "https://i.ibb.co/q77mb8Q/2-57800ecd-230a-4e98-8b4b-a82104908866-1024x1024.webp"
+    ]
+  },
+  {
+    "_id": "BT005",
+    "name": "Baby Activity Center",
+    "img": "https://i.ibb.co/m9SF58k/11-5e530394-9272-4151-9c11-76493207fcf3-large.webp",
+    "title": "Promote early learning with the Baby Activity Center. Suitable for ages 6-24 months, this center offers a variety of sensory and developmental activities.",
+    "category": "best-sellers",
+    "price": 49.99,
+    "age": 24,
+    "available": 8,
+    "description": "The Baby Activity Center includes a range of interactive toys and features such as buttons, spinners, and rattles. It encourages fine motor skills, cause-and-effect learning, and cognitive development. This center is a hub of entertainment and education.",
+    "reviews": [
+      {
+        "username": "LearningParent",
+        "rating": 5,
+        "comment": "This activity center is fantastic! Our baby is engaged and learning every day."
+      },
+      {
+        "username": "BusyMom",
+        "rating": 4,
+        "comment": "A great way to keep our little one occupied with stimulating activities. It's a must-have."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/CmjkXGb/10-4d69a3bc-01ce-49c8-b85f-351af45a9316-1024x1024.webp",
+      "https://i.ibb.co/m9SF58k/11-5e530394-9272-4151-9c11-76493207fcf3-large.webp",
+      "https://i.ibb.co/tCf6qjD/13-cfcacc24-17d9-499f-a9e4-e1d274e0c9c4-1024x1024.webp"
+    ]
+  },
+  {
+    "_id": "SH002",
+    "name": "Skip Hop Explore",
+    "img": "https://i.ibb.co/PwWD34d/8-large.webp",
+    "title": "Jump into fun with the Skip Hop Explore & More Jumpscape Foldaway Jumper. Suitable for ages 3-15 months, this jumper offers hours of bouncing joy.",
+    "category": "best-sellers",
+    "price": 79.99,
+    "age": 15,
+    "available": 8,
+    "description": "The Skip Hop Jumpscape Foldaway Jumper is designed to provide your baby with a fun and active playtime. It features a sturdy frame and a comfortable seat for your baby to bounce in. The jumper encourages leg muscle development and coordination. It also folds away for easy storage when not in use.",
+    "reviews": [
+      {
+        "username": "JumpingFun",
+        "rating": 5,
+        "comment": "Our baby can't get enough of this jumper! It's well-built and provides great exercise."
+      },
+      {
+        "username": "ActiveParent",
+        "rating": 4,
+        "comment": "A fantastic way to keep our baby active and engaged. The folding feature is a plus."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/0fv54z9/6-ba9c55b7-522b-431e-b2ad-2f204024b8bc-1024x1024.webp",
+      "https://i.ibb.co/PwWD34d/8-large.webp",
+      "https://i.ibb.co/q77mb8Q/2-57800ecd-230a-4e98-8b4b-a82104908866-1024x1024.webp"
+    ]
+  },
+  {
+    "_id": "SH003",
+    "name": "Skip Hop Silver Lining Cloud Play Gym",
+    "img": "https://i.ibb.co/q77mb8Q/2-57800ecd-230a-4e98-8b4b-a82104908866-1024x1024.webp",
+    "title": "Create a world of play for your baby with the Skip Hop Silver Lining Cloud Play Gym. Suitable for ages 0-15 months, this play gym offers sensory exploration.",
+    "category": "new-arrivals",
+    "price": 49.99,
+    "age": 12,
+    "available": 12,
+    "description": "The Skip Hop Silver Lining Cloud Play Gym is designed to stimulate your baby's senses. It features hanging toys, a soft mat, and a plush cloud for added comfort. This play gym encourages tummy time, reaching, and grasping. It's perfect for promoting early motor skills and sensory development.",
+    "reviews": [
+      {
+        "username": "HappyParent",
+        "rating": 5,
+        "comment": "This play gym has been a lifesaver! It keeps our baby engaged, and the cloud cushion is a nice touch."
+      },
+      {
+        "username": "SensoryExplorer",
+        "rating": 4,
+        "comment": "A great play gym for sensory development. Our baby enjoys the hanging toys and textures."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/0fv54z9/6-ba9c55b7-522b-431e-b2ad-2f204024b8bc-1024x1024.webp",
+      "https://i.ibb.co/PwWD34d/8-large.webp",
+      "https://i.ibb.co/q77mb8Q/2-57800ecd-230a-4e98-8b4b-a82104908866-1024x1024.webp"
+    ]
+  },
+  {
+    "_id": "CY001",
+    "name": "Baby Balance Bike",
+    "img": "https://i.ibb.co/2nFPhyf/32352739-7932329.jpg",
+    "title": "Introduce your little one to the joy of cycling with our Baby Balance Bike. Suitable for ages 1-3 years, this bike promotes balance and coordination.",
+    "category": "feature",
+    "price": 49.99,
+    "age": 36,
+    "available": 15,
+    "description": "Our Baby Balance Bike is designed to help your child learn balance and coordination in a fun and safe way. It features a sturdy frame, comfortable seat, and soft handlebars. The bike encourages kids to use their feet to push and glide, promoting confidence and motor skills development.",
+    "reviews": [
+      {
+        "username": "ProudParent",
+        "rating": 5,
+        "comment": "This balance bike is a fantastic way to teach balance and prepare our child for cycling. It's well-made and safe."
+      },
+      {
+        "username": "CyclingEnthusiast",
+        "rating": 4,
+        "comment": "Our toddler loves this balance bike! It's a great way to get them started on their cycling journey."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/2nFPhyf/32352739-7932329.jpg",
+      "https://i.ibb.co/ngYTZS6/32352746-7932667.jpg",
+      "https://i.ibb.co/Vx3GY8B/32352755-7932878.jpg"
+    ]
+  },
+  {
+    "_id": "B002",
+    "name": "Soft Plush Ball",
+    "img": "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+    "title": "Delight your baby with our Colorful Sensory Ball Set. Designed for ages 0-15 months, this set of textured and vibrant balls is perfect for sensory development.",
+    "category": "best-sellers",
+    "price": 19.99,
+    "age": 9,
+    "available": 8,
+    "description": "Our Colorful Sensory Ball Set includes a variety of textured balls in different shapes and sizes, all made from safe, BPA-free materials. These balls are designed to engage your baby's senses, from touch to sight and sound. Perfectly sized for little hands, they encourage motor skills and sensory exploration.",
+    "reviews": [],
+    "relatedImg": [
+      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
+      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
+    ]
+  },
+  {
+    "_id": "BB002",
+    "name": "Musical Teddy Bear",
+    "img": "https://i.ibb.co/kKWN0LP/5-e027c36d-cba6-49a2-9011-a5bef839f15b-large.webp",
+    "title": "Delight your baby with our Musical Teddy Bear. Suitable for ages 0-15 months, this bear plays soothing melodies and provides comfort.",
+    "category": "best-sellers",
+    "price": 24.99,
+    "age": 15,
+    "available": 8,
+    "description": "Our Musical Teddy Bear is designed to create a calming environment for your baby. It features a music box that plays gentle lullabies, helping your baby relax and fall asleep. The bear's soft fur is perfect for snuggling, making it a comforting friend. This bear is a wonderful addition to your baby's bedtime routine.",
+    "reviews": [
+      {
+        "username": "LullabyMom",
+        "rating": 5,
+        "comment": "This musical teddy bear has been a lifesaver during bedtime. The lullabies work like magic!"
+      },
+      {
+        "username": "MusicLover",
+        "rating": 4,
+        "comment": "A cute and cuddly bear with a bonus of soothing music. My baby enjoys it."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/Px6sKD6/4-e7f07674-6c08-4c10-8f14-8161370e8507-1024x1024.webp",
+      "https://i.ibb.co/kKWN0LP/5-e027c36d-cba6-49a2-9011-a5bef839f15b-large.webp",
+      "https://i.ibb.co/WshvPCg/1-large.webp"
+    ]
+  },
+  {
     "_id": "BC002",
     "name": "Interactive Baby Car",
     "img": "https://i.ibb.co/W2YN906/3093272-34796.jpg",
     "title": "Engage your baby's senses with our Interactive Baby Car. Suitable for ages 0-15 months, this car is loaded with sensory features and fun activities.",
-    "category": "Interactive Toys",
+    "category": "best-sellers",
     "price": 19.99,
     "age": 15,
     "available": 8,
@@ -129,11 +325,235 @@
     ]
   },
   {
+    "_id": "BT001",
+    "name": "Rainbow Stacking Rings",
+    "img": "https://i.ibb.co/jry8MLP/12-0a5200ad-0a21-41fe-b979-78d8644cfbad-large.webp",
+    "title": "Encourage your baby's fine motor skills with Rainbow Stacking Rings. Suitable for ages 6-18 months, this toy offers color recognition and stacking fun.",
+    "category": "feature",
+    "price": 14.99,
+    "age": 18,
+    "available": 10,
+    "description": "The Rainbow Stacking Rings set includes colorful rings of various sizes. Your baby can stack them in any order, improving hand-eye coordination and spatial awareness. This toy is made from safe, BPA-free materials and provides hours of educational play.",
+    "reviews": [
+      {
+        "username": "ColorfulFun",
+        "rating": 5,
+        "comment": "These stacking rings are a hit! Our baby loves sorting them by color and stacking them high."
+      },
+      {
+        "username": "ParentingPro",
+        "rating": 4,
+        "comment": "A great way to introduce colors and improve dexterity. Sturdy and safe for little hands."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/jry8MLP/12-0a5200ad-0a21-41fe-b979-78d8644cfbad-large.webp",
+      "https://i.ibb.co/Nn4MSpJ/15-large.webp",
+      "https://i.ibb.co/XxPwnSq/14-7b4b272b-87b5-493b-9bd3-ea57bad0b289-large.webp"
+    ]
+  },
+  {
+    "_id": "BT002",
+    "name": "Soft Plush Stacker",
+    "img": "https://i.ibb.co/XxPwnSq/14-7b4b272b-87b5-493b-9bd3-ea57bad0b289-large.webp",
+    "title": "Lull your baby to sleep with the Musical Baby Mobile. Suitable for ages 0-12 months, this mobile plays soothing melodies and spins adorable animals.",
+    "category": "best-sellers",
+    "price": 29.99,
+    "age": 12,
+    "available": 8,
+    "description": "The Musical Baby Mobile features soft, plush animal toys that rotate gently while soothing lullabies play. It attaches easily to the crib, creating a calming bedtime routine for your baby. This mobile aids in auditory development and encourages restful sleep.",
+    "reviews": [
+      {
+        "username": "LullabyMom",
+        "rating": 5,
+        "comment": "This mobile is a bedtime essential! The music is lovely, and our baby falls asleep peacefully."
+      },
+      {
+        "username": "MusicalDreams",
+        "rating": 4,
+        "comment": "A sweet mobile with soft toys and soothing tunes. It creates a peaceful sleep environment."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/jry8MLP/12-0a5200ad-0a21-41fe-b979-78d8644cfbad-large.webp",
+      "https://i.ibb.co/XxPwnSq/14-7b4b272b-87b5-493b-9bd3-ea57bad0b289-large.webp",
+      "https://i.ibb.co/Nn4MSpJ/15-large.webp"
+    ]
+  },
+  {
+    "_id": "B003",
+    "name": "Giggle and Roll Ball",
+    "img": "https://i.ibb.co/DYv2THB/4556931-4387.jpg",
+    "title": "Watch your baby giggle with our Giggle and Roll Ball. Suitable for ages 0-15 months, this interactive ball provides endless entertainment.",
+    "category": "new-arrivals",
+    "price": 14.99,
+    "age": 6,
+    "available": 12,
+    "description": "Our Giggle and Roll Ball is designed to keep your baby entertained. When rolled, it produces amusing sounds and lights up, captivating your baby's attention. Its easy-grasp design is perfect for tiny hands. This interactive ball promotes sensory development and encourages crawling and chasing, making it a must-have for playtime.",
+    "reviews": [
+      {
+        "username": "PlaytimePro",
+        "rating": 3,
+        "comment": "My baby can't get enough of this ball! The giggles are priceless."
+      },
+      {
+        "username": "FirstTimeMom",
+        "rating": 4,
+        "comment": "Fun interactive toy. My baby enjoys chasing after it and playing with the lights."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/SJZY3wL/893932-O9-FG5-V0.jpg",
+      "https://i.ibb.co/k1syHGX/10601489-41932.jpg",
+      "https://i.ibb.co/DYv2THB/4556931-4387.jpg"
+    ]
+  },
+  {
+    "_id": "DT001",
+    "name": "Puppy Playtime Plush Toy",
+    "img": "https://i.ibb.co/Nn4MSpJ/15-large.webp",
+    "title": "Keep your furry friend entertained with the Puppy Playtime Plush Toy. Suitable for puppies aged 0-15 months, this toy offers hours of fun and exercise.",
+    "category": "new-arrivals",
+    "price": 9.99,
+    "age": 15,
+    "available": 12,
+    "description": "The Puppy Playtime Plush Toy is designed to provide a safe and engaging play experience for your puppy. It features soft, plush material and a squeaker for added excitement. This toy encourages your puppy to chase, fetch, and exercise, promoting healthy physical activity and mental stimulation.",
+    "reviews": [
+      {
+        "username": "DogLover123",
+        "rating": 5,
+        "comment": "My puppy absolutely loves this toy! It keeps him active and entertained for hours."
+      },
+      {
+        "username": "PuppyParent",
+        "rating": 4,
+        "comment": "A great toy for puppies. It's soft and durable, and the squeaker adds extra fun."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/jry8MLP/12-0a5200ad-0a21-41fe-b979-78d8644cfbad-large.webp",
+      "https://i.ibb.co/XxPwnSq/14-7b4b272b-87b5-493b-9bd3-ea57bad0b289-large.webp",
+      "https://i.ibb.co/Nn4MSpJ/15-large.webp"
+    ]
+  },
+  {
+    "_id": "BB003",
+    "name": "Teddy Bear Friends Set",
+    "img": "https://i.ibb.co/WshvPCg/1-large.webp",
+    "title": "Let your baby explore friendship with our Teddy Bear Friends Set. Suitable for ages 0-15 months, this set includes adorable bears for playtime and companionship.",
+    "category": "new-arrivals",
+    "price": 29.99,
+    "age": 9,
+    "available": 15,
+    "description": "Our Teddy Bear Friends Set is perfect for little explorers. The set includes three cute bears, each with its own personality. Your baby can enjoy imaginative play and develop social skills. These bears are made from safe materials and provide endless fun and friendship.",
+    "reviews": [
+      {
+        "username": "FriendshipExplorer",
+        "rating": 5,
+        "comment": "These teddy bears are wonderful for pretend play. My baby loves creating stories with them."
+      },
+      {
+        "username": "ParentingPro",
+        "rating": 4,
+        "comment": "Great addition to our baby's toy collection. These bears encourage imaginative play."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/Px6sKD6/4-e7f07674-6c08-4c10-8f14-8161370e8507-1024x1024.webp",
+      "https://i.ibb.co/kKWN0LP/5-e027c36d-cba6-49a2-9011-a5bef839f15b-large.webp",
+      "https://i.ibb.co/WshvPCg/1-large.webp"
+    ]
+  },
+  {
+    "_id": "BT004",
+    "name": "Baby Mirror Toy",
+    "img": "https://i.ibb.co/CmjkXGb/10-4d69a3bc-01ce-49c8-b85f-351af45a9316-1024x1024.webp",
+    "title": "Foster self-recognition with the Baby Mirror Toy. Suitable for ages 3-12 months, this mirror engages your baby's curiosity and discovery.",
+    "category": "feature",
+    "price": 9.99,
+    "age": 12,
+    "available": 15,
+    "description": "The Baby Mirror Toy features a shatterproof, baby-safe mirror surrounded by soft, plush fabric. It can be attached to cribs or play gyms, allowing your baby to see their reflection and explore facial expressions. This toy promotes self-awareness and social development.",
+    "reviews": [
+      {
+        "username": "MirrorExplorer",
+        "rating": 5,
+        "comment": "Our baby's face lights up when they see themselves in this mirror! It's a delightful toy."
+      },
+      {
+        "username": "CuriousMom",
+        "rating": 4,
+        "comment": "A simple yet engaging toy that helps our baby discover themselves and their surroundings."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/CmjkXGb/10-4d69a3bc-01ce-49c8-b85f-351af45a9316-1024x1024.webp",
+      "https://i.ibb.co/m9SF58k/11-5e530394-9272-4151-9c11-76493207fcf3-large.webp",
+      "https://i.ibb.co/tCf6qjD/13-cfcacc24-17d9-499f-a9e4-e1d274e0c9c4-1024x1024.webp"
+    ]
+  },
+  {
+    "_id": "CY002",
+    "name": "Tricycle Adventure",
+    "img": "https://i.ibb.co/ngYTZS6/32352746-7932667.jpg",
+    "title": "Embark on exciting adventures with our Tricycle Adventure. Suitable for ages 2-4 years, this tricycle is perfect for outdoor exploration.",
+    "category": "best-sellers",
+    "price": 69.99,
+    "age": 48,
+    "available": 10,
+    "description": "The Tricycle Adventure is designed for young explorers. It features a durable frame, adjustable seat, and safety features like a parental control handle. This tricycle encourages outdoor play, exercise, and imaginative adventures. It's a wonderful way to introduce kids to the joy of cycling.",
+    "reviews": [
+      {
+        "username": "OutdoorExplorer",
+        "rating": 5,
+        "comment": "This tricycle is perfect for outdoor fun! Our child enjoys riding it, and we love the parent handle for added safety."
+      },
+      {
+        "username": "AdventurousParent",
+        "rating": 4,
+        "comment": "A great tricycle for our little explorer. It's sturdy and provides hours of outdoor entertainment."
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/2nFPhyf/32352739-7932329.jpg",
+      "https://i.ibb.co/ngYTZS6/32352746-7932667.jpg",
+      "https://i.ibb.co/Vx3GY8B/32352755-7932878.jpg"
+    ]
+  },
+  {
+    "_id": "BT006",
+    "name": "Baby Water Play Mat",
+    "img": "https://i.ibb.co/tCf6qjD/13-cfcacc24-17d9-499f-a9e4-e1d274e0c9c4-1024x1024.webp",
+    "title": "Explore sensory play with the Baby Water Play Mat. Suitable for ages 3-12 months, this mat offers a unique water-filled experience.",
+    "category": "new-arrivals",
+    "price": 17.99,
+    "age": 12,
+    "available": 10,
+    "description": "The Baby Water Play Mat features a soft fabric surface with a water-filled inner section. When your baby presses on it, colorful sea creatures float around, providing sensory stimulation and visual delight. It's a mess-free way to introduce water play.",
+    "reviews": [
+      {
+        "username": "WaterExplorer",
+        "rating": 5,
+        "comment": "Our baby enjoys splashing and exploring this water play mat. It's a unique sensory experience."
+      },
+      {
+        "username": "MessFreeFun",
+        "rating": 4,
+        "comment": "A clever idea for water play without the mess. Our baby loves it!"
+      }
+    ],
+    "relatedImg": [
+      "https://i.ibb.co/CmjkXGb/10-4d69a3bc-01ce-49c8-b85f-351af45a9316-1024x1024.webp",
+      "https://i.ibb.co/m9SF58k/11-5e530394-9272-4151-9c11-76493207fcf3-large.webp",
+      "https://i.ibb.co/tCf6qjD/13-cfcacc24-17d9-499f-a9e4-e1d274e0c9c4-1024x1024.webp"
+    ]
+  },
+  {
     "_id": "BC003",
     "name": "Baby Race Car Set",
     "img": "https://i.ibb.co/NFz1Mfh/4980943-50926.jpg",
     "title": "Let your baby enjoy a race with our Baby Race Car Set. Suitable for ages 0-15 months, this set includes colorful cars for imaginative play.",
-    "category": "Play Sets",
+    "category": "new-arrivals",
     "price": 24.99,
     "age": 9,
     "available": 15,
@@ -141,7 +561,7 @@
     "reviews": [
       {
         "username": "RaceEnthusiast",
-        "rating": 5,
+        "rating": 2,
         "comment": "My baby loves these little race cars! They're durable and perfect for racing around."
       },
       {

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Exclusive = () => {
   return (
     <div className="max-w-screen-2xl mx-auto px-5 my-24">
@@ -9,15 +11,16 @@ const Exclusive = () => {
               alt=""
             />
           </div>
-
           <div className="absolute top-1/3 right-20 text-white">
             <p>Sale on exclusive</p>
             <h3 className="text-3xl mt-2 mb-5">
               Accessories <br /> kids toy
             </h3>
-            <button className="uppercase bg-[#4285f4] px-5 py-2 rounded-full hover:bg-[#fbbd07] duration-300">
-              shop now
-            </button>
+            <Link to={"/products"}>
+              <button className="uppercase bg-[#4285f4] px-5 py-2 rounded-full hover:bg-[#fbbd07] duration-300">
+                shop now
+              </button>
+            </Link>
           </div>
         </div>
         <div className="relative overflow-hidden">
@@ -29,9 +32,11 @@ const Exclusive = () => {
             <h3 className="text-3xl mt-2 mb-5">
               Accessories <br /> kids toy
             </h3>
-            <button className="uppercase bg-[#fbbd07] px-5 py-2 rounded-full hover:bg-[#4285f4] duration-300">
-              shop now
-            </button>
+            <Link to={"/products"}>
+              <button className="uppercase bg-[#fbbd07] px-5 py-2 rounded-full hover:bg-[#4285f4] duration-300">
+                shop now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
