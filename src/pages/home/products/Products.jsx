@@ -5,11 +5,17 @@ import Product from "../../../components/shared/product/Product";
 const Products = () => {
   const [activeTab, setActiveTab] = useState("feature");
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch(`http://localhost:5000/productsByCategory?category=${activeTab}`)
       .then((res) => res.json())
-      .then((data) => setProducts(data.filter((item) => item.category === activeTab)));
+      .then((data) => {
+        if (data.length > 0) {
+          setProducts(data);
+          setLoading(false);
+        }
+      });
   }, [activeTab]);
 
   return (
@@ -57,33 +63,41 @@ const Products = () => {
             New Arrivals
           </Tab>
         </TabList>
-        <TabPanel className="grid md:grid-cols-3 gap-10">
-          {activeTab === "feature" && (
-            <>
-              {products.slice(0, 6).map((product) => (
-                <Product key={product._id} product={product}></Product>
-              ))}
-            </>
-          )}
-        </TabPanel>
-        <TabPanel className="grid md:grid-cols-3 gap-10">
-          {activeTab === "best-sellers" && (
-            <>
-              {products.slice(0, 6).map((product) => (
-                <Product key={product._id} product={product}></Product>
-              ))}
-            </>
-          )}
-        </TabPanel>
-        <TabPanel className="grid md:grid-cols-3 gap-10">
-          {activeTab === "new-arrivals" && (
-            <>
-              {products.slice(0, 6).map((product) => (
-                <Product key={product._id} product={product}></Product>
-              ))}
-            </>
-          )}
-        </TabPanel>
+        {loading ? (
+          <div className="flex justify-center">
+            <span className="loading loading-dots loading-lg text-[#70be4e]"></span>
+          </div>
+        ) : (
+          <>
+            <TabPanel className="grid md:grid-cols-3 gap-10">
+              {activeTab === "feature" && (
+                <>
+                  {products.slice(0, 6).map((product) => (
+                    <Product key={product._id} product={product}></Product>
+                  ))}
+                </>
+              )}
+            </TabPanel>
+            <TabPanel className="grid md:grid-cols-3 gap-10">
+              {activeTab === "best-sellers" && (
+                <>
+                  {products.slice(0, 6).map((product) => (
+                    <Product key={product._id} product={product}></Product>
+                  ))}
+                </>
+              )}
+            </TabPanel>
+            <TabPanel className="grid md:grid-cols-3 gap-10">
+              {activeTab === "new-arrivals" && (
+                <>
+                  {products.slice(0, 6).map((product) => (
+                    <Product key={product._id} product={product}></Product>
+                  ))}
+                </>
+              )}
+            </TabPanel>
+          </>
+        )}
       </Tabs>
     </div>
   );
