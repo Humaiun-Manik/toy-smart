@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
 import SubHeader from "../../components/shared/subHeader/SubHeader";
 import Blog from "./Blog";
+import { useLoaderData } from "react-router-dom";
 
 const Blogs = () => {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    fetch("blogs.json")
-      .then((res) => res.json())
-      .then((data) => setBlogs(data));
-  }, []);
+  const blogs = useLoaderData();
 
   return (
     <div className="max-w-screen-2xl mx-auto px-5">

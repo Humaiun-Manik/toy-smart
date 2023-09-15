@@ -22,7 +22,7 @@ const ProductDetails = () => {
   const [quantity, setQuantity] = useState(0);
   const [reviewForm, setREviewForm] = useState(false);
   const [rating, setRating] = useState(0);
-  const { _id, img, name, title, available, price, relatedImg, reviews, description } = product;
+  const { img, name, title, available, price, relatedImg, reviews, description } = product;
   const maxRating = reviews.reduce((max, review) => Math.max(max, review.rating), 0);
   const selectedImg = relatedImg.findIndex((ri) => ri === img);
 

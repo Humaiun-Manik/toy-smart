@@ -10,6 +10,7 @@ import About from "../../pages/about/About";
 import AllProduct from "../../pages/allProduct/AllProduct";
 import ProductDetails from "../../pages/productDetails/ProductDetails";
 import Blogs from "../../pages/blog/Blogs";
+import BlogDetails from "../../pages/blogDetails/BlogDetails";
 
 const router = createBrowserRouter([
   {
@@ -31,8 +32,14 @@ const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`),
       },
       {
-        path: "blog",
+        path: "blogs",
         element: <Blogs />,
+        loader: () => fetch("http://localhost:5000/blogs"),
+      },
+      {
+        path: "blog-details/:id",
+        element: <BlogDetails />,
+        loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`),
       },
       {
         path: "about",
