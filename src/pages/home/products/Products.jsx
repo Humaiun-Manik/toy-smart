@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import Product from "../../../components/shared/product/Product";
+import Loading from "../../../components/shared/loading/Loading";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("feature");
@@ -64,9 +65,7 @@ const Products = () => {
           </Tab>
         </TabList>
         {loading ? (
-          <div className="flex justify-center">
-            <span className="loading loading-dots loading-lg text-[#70be4e]"></span>
-          </div>
+          <Loading />
         ) : (
           <>
             <TabPanel className="grid md:grid-cols-3 gap-10">
