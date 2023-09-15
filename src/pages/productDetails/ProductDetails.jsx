@@ -26,8 +26,6 @@ const ProductDetails = () => {
   const maxRating = reviews.reduce((max, review) => Math.max(max, review.rating), 0);
   const selectedImg = relatedImg.findIndex((ri) => ri === img);
 
-  console.log(rating);
-
   return (
     <div className="max-w-screen-2xl px-5 mx-auto mb-32">
       <SubHeader>Product Details</SubHeader>

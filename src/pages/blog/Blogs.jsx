@@ -26,7 +26,7 @@ const Blogs = () => {
   }, [currentPage, itemsPerPage]);
 
   return (
-    <div className="max-w-screen-2xl mx-auto px-5">
+    <div className="max-w-screen-2xl mx-auto px-5 mb-32 ">
       <SubHeader>News</SubHeader>
       {loading ? (
         <Loading />
@@ -39,7 +39,7 @@ const Blogs = () => {
           </div>
 
           {/* pagination */}
-          <div className="text-center flex items-center justify-center mb-32 ">
+          <div className="text-center flex items-center justify-center">
             <button
               disabled={currentPage === 0}
               onClick={() => setCurrentPage(currentPage - 1)}
