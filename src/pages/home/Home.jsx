@@ -3,7 +3,7 @@ import Banner from "./banner/Banner";
 import Collections from "./collections/Collections";
 import Exclusive from "./exclusive/Exclusive";
 import Gallery from "./gallery/Gallery";
-import Products from "../../components/shared/products/Products";
+import Products from "./products/Products";
 import Questions from "./questions/Questions";
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Product from "./Product";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import Product from "../../../components/shared/product/Product";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("feature");
