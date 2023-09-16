@@ -52,50 +52,48 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         <div className="flex items-center">
-          {/* <div className="dropdown dropdown-end me-5">
-            <label tabIndex={0} className="">
-              <div className="indicator">
-                <BiShoppingBag className="text-2xl cursor-pointer hover:text-[#fbbc06] duration-300" />
-                <span className="badge badge-sm indicator-item -mt-1  h-5 w-5 p-1 bg-[#fbbc06]  text-white rounded-full">
-                  7
-                </span>
-              </div>
-            </label>
-            <div
-              tabIndex={0}
-              className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
-            >
-              <div className="card-body">
-                <span className="font-bold text-lg">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
-                <div className="card-actions">
-                  <button className="btn btn-primary btn-block">View cart</button>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="drawer z-50 drawer-end">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}
-              <label htmlFor="my-drawer" className="mr-10">
-                <span className="badge badge-sm indicator-item h-5 w-5 ms-3  bg-[#fbbc06]  text-white rounded-full">
+              <label htmlFor="my-drawer" className="mr-10 cursor-pointer hover:text-[#70be4e] duration-300">
+                <span className="absolute badge badge-sm indicator-item h-5 w-5 ms-3  bg-[#fbbc06]  text-white rounded-full">
                   7
                 </span>
-                <BiShoppingBag className="mt-[-10] text-3xl cursor-pointer hover:text-[#fbbc06] duration-300" />
+                <BiShoppingBag className="relative top-4 text-3xl" />
               </label>
             </div>
             <div className="drawer-side">
               <label htmlFor="my-drawer" className="drawer-overlay"></label>
-              <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+              <div className="menu p-4 w-80 min-h-full bg-white text-base-content">
                 {/* Sidebar content here */}
-                <li>
-                  <a>Sidebar Item 1</a>
-                </li>
-                <li>
-                  <a>Sidebar Item 2</a>
-                </li>
-              </ul>
+                <h2 className="text-xl text-center text-[#70be4e] font-semibold mt-5">
+                  Shopping <span className="text-[#fbbc08]">Cart</span>
+                </h2>
+                <div className="divider"></div>
+                <div className="w-full">
+                  <div>
+                    <hr />
+                    <div className="flex justify-between my-4 text-lg">
+                      <p>Total:</p>
+                      <p>$165.00 USD</p>
+                    </div>
+                    <hr />
+                  </div>
+                  <div className="my-8">
+                    <Link>
+                      <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full mb-4 hover:bg-[#70be4e] hover:text-white duration-300">
+                        checkout
+                      </button>
+                    </Link>
+                    <Link>
+                      <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full hover:bg-[#70be4e] hover:text-white duration-300">
+                        view cart
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="dropdown dropdown-end">
