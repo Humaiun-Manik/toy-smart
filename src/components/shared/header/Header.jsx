@@ -52,7 +52,7 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         <div className="flex items-center">
-          <div className="dropdown dropdown-end me-5">
+          {/* <div className="dropdown dropdown-end me-5">
             <label tabIndex={0} className="">
               <div className="indicator">
                 <BiShoppingBag className="text-2xl cursor-pointer hover:text-[#fbbc06] duration-300" />
@@ -72,6 +72,30 @@ const Header = () => {
                   <button className="btn btn-primary btn-block">View cart</button>
                 </div>
               </div>
+            </div>
+          </div> */}
+          <div className="drawer z-50 drawer-end">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer" className="mr-10">
+                <span className="badge badge-sm indicator-item h-5 w-5 ms-3  bg-[#fbbc06]  text-white rounded-full">
+                  7
+                </span>
+                <BiShoppingBag className="mt-[-10] text-3xl cursor-pointer hover:text-[#fbbc06] duration-300" />
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label htmlFor="my-drawer" className="drawer-overlay"></label>
+              <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                {/* Sidebar content here */}
+                <li>
+                  <a>Sidebar Item 1</a>
+                </li>
+                <li>
+                  <a>Sidebar Item 2</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="dropdown dropdown-end">

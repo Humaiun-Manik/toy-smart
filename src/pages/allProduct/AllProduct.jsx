@@ -89,6 +89,24 @@ const AllProduct = () => {
           </div>
         </>
       )}
+      <div className="grid md:grid-cols-4 gap-10 mt-28">
+        <div className="bg-[#70be4e] h-72 rounded-xl flex flex-col items-center justify-center">
+          <img className="w-1/2" src="https://i.ibb.co/pxqtXph/puzzle-1.webp" alt="" />
+          <p className="text-white text-xl font-bold mt-5">1 to 3 years</p>
+        </div>
+        <div className="bg-[#fbbc07] h-72 rounded-xl flex flex-col items-center justify-center">
+          <img className="w-1/2" src="https://i.ibb.co/RvtNCmj/truck.webp" alt="" />
+          <p className="text-white text-xl font-bold mt-5">4 to 8 years</p>
+        </div>
+        <div className="bg-[#70be4e] h-72 rounded-xl flex flex-col items-center justify-center">
+          <img className="w-1/2" src="https://i.ibb.co/F3G46yg/block.webp" alt="" />
+          <p className="text-white text-xl font-bold mt-5">9 to 12 years</p>
+        </div>
+        <div className="bg-[#fbbc07] h-72 rounded-xl flex flex-col items-center justify-center">
+          <img className="w-1/2" src="https://i.ibb.co/JRYHH0p/plane.webp" alt="" />
+          <p className="text-white text-xl font-bold mt-5">13 to 14 years</p>
+        </div>
+      </div>
     </div>
   );
 };

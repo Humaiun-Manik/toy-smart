@@ -5,7 +5,6 @@ import { ImPinterest2 } from "react-icons/im";
 
 const BlogDetails = () => {
   const blog = useLoaderData();
-  console.log(blog.length);
 
   return (
     <div className="max-w-screen-2xl mx-auto px-5">
