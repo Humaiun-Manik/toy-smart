@@ -11,6 +11,7 @@ import AllProduct from "../../pages/allProduct/AllProduct";
 import ProductDetails from "../../pages/productDetails/ProductDetails";
 import Blogs from "../../pages/blog/Blogs";
 import BlogDetails from "../../pages/blogDetails/BlogDetails";
+import Cart from "../../pages/cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         path: "blog-details/:id",
         element: <BlogDetails />,
         loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`),
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
       {
         path: "about",

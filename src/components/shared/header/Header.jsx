@@ -86,7 +86,7 @@ const Header = () => {
                         checkout
                       </button>
                     </Link>
-                    <Link>
+                    <Link to={"/cart"}>
                       <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full hover:bg-[#70be4e] hover:text-white duration-300">
                         view cart
                       </button>
