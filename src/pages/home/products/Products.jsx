@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import Product from "../../../components/shared/product/Product";
 import Loading from "../../../components/shared/loading/Loading";
 

@@ -99,50 +99,56 @@ const Header = () => {
                   Shopping <span className="text-[#fbbc08]">Cart</span>
                 </h2>
                 <div className="divider"></div>
-                {cartProducts.map((product) => (
-                  <div key={product._id} className="flex items-center mb-5">
-                    <div className="w-24 relative">
-                      <Link to={`/product-details/${product.productId}`}>
-                        <img className="w-20" src={product.img} alt="" />
-                      </Link>
-                      <AiOutlineCloseCircle
-                        onClick={() => handleDeleteProduct(product._id)}
-                        className="absolute top-0 text-lg hover:text-[#ff0d01] duration-300 cursor-pointer"
-                      />
+                {cartProducts.length === 0 ? (
+                  <h4 className="text-xl">Your cart is empty now.</h4>
+                ) : (
+                  <>
+                    {cartProducts.map((product) => (
+                      <div key={product._id} className="flex items-center mb-5">
+                        <div className="w-24 relative">
+                          <Link to={`/product-details/${product.productId}`}>
+                            <img className="w-20" src={product.img} alt="" />
+                          </Link>
+                          <AiOutlineCloseCircle
+                            onClick={() => handleDeleteProduct(product._id)}
+                            className="absolute top-0 text-lg hover:text-[#ff0d01] duration-300 cursor-pointer"
+                          />
+                        </div>
+                        <div className="text-base">
+                          <Link to={`/product-details/${product.productId}`}>
+                            <p className="hover:text-[#70be4e] duration-300">{product.name}</p>
+                          </Link>
+                          <p className="mt-2 flex items-end">
+                            {product.quantity}
+                            <IoIosClose className="text-xl" />${product.price}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                    <div className="w-full mt-10">
+                      <div>
+                        <hr />
+                        <div className="flex justify-between my-4 text-lg">
+                          <p>Total:</p>
+                          <p>${total}</p>
+                        </div>
+                        <hr />
+                      </div>
+                      <div className="my-8">
+                        <Link>
+                          <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full mb-4 hover:bg-[#70be4e] hover:text-white duration-300">
+                            checkout
+                          </button>
+                        </Link>
+                        <Link to={"/cart"}>
+                          <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full hover:bg-[#70be4e] hover:text-white duration-300">
+                            view cart
+                          </button>
+                        </Link>
+                      </div>
                     </div>
-                    <div className="text-base">
-                      <Link to={`/product-details/${product.productId}`}>
-                        <p className="hover:text-[#70be4e] duration-300">{product.name}</p>
-                      </Link>
-                      <p className="mt-2 flex items-end">
-                        {product.quantity}
-                        <IoIosClose className="text-xl" />${product.price}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-                <div className="w-full mt-10">
-                  <div>
-                    <hr />
-                    <div className="flex justify-between my-4 text-lg">
-                      <p>Total:</p>
-                      <p>${total}</p>
-                    </div>
-                    <hr />
-                  </div>
-                  <div className="my-8">
-                    <Link>
-                      <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full mb-4 hover:bg-[#70be4e] hover:text-white duration-300">
-                        checkout
-                      </button>
-                    </Link>
-                    <Link to={"/cart"}>
-                      <button className="font-semibold text-[#333] text-lg uppercase w-full py-4 border border-[#ccc] rounded-full hover:bg-[#70be4e] hover:text-white duration-300">
-                        view cart
-                      </button>
-                    </Link>
-                  </div>
-                </div>
+                  </>
+                )}
               </div>
             </div>
           </div>
