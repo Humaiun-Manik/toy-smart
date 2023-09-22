@@ -16,15 +16,42 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { FiPlay } from "react-icons/fi";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
   const product = useLoaderData();
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [reviewForm, setREviewForm] = useState(false);
   const [rating, setRating] = useState(0);
-  const { img, name, title, available, price, relatedImg, reviews, description } = product;
+  const { _id, img, name, title, available, price, relatedImg, reviews, description } = product;
   const maxRating = reviews.reduce((max, review) => Math.max(max, review.rating), 0);
   const selectedImg = relatedImg.findIndex((ri) => ri === img);
+
+  // product add to cart
+  const handleAddToCart = () => {
+    const productInfo = {
+      productId: _id,
+      img,
+      name,
+      price,
+      quantity,
+      available,
+    };
+
+    fetch("http://localhost:5000/cart", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(productInfo),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          toast.success("Product successfully added to your cart! 🛒");
+        }
+      });
+  };
 
   return (
     <div className="max-w-screen-2xl px-5 mx-auto mb-32">
@@ -68,7 +95,7 @@ const ProductDetails = () => {
           <p className="text-[#333] text-lg my-5">{title}</p>
           <div className="flex mt-8">
             <div className="border flex items-center justify-around py-2 w-28 text-lg rounded-md">
-              <button disabled={quantity === 0} onClick={() => setQuantity(quantity - 1)}>
+              <button disabled={quantity === 1} onClick={() => setQuantity(quantity - 1)}>
                 <HiMinusSm />
               </button>
               <p>{quantity}</p>
@@ -76,8 +103,11 @@ const ProductDetails = () => {
                 <BiPlus />
               </button>
             </div>
-            <button className="uppercase bg-[#70be4e] text-white px-10 md:px-20 rounded-full ms-3">
-              Add to cart
+            <button
+              onClick={handleAddToCart}
+              className="uppercase bg-[#70be4e] text-white px-10 md:px-20 rounded-full ms-3"
+            >
+              Add To Cart
             </button>
           </div>
           <button className="border border-[#fbbc07] text-[#fbbc07] text-lg font-medium py-3 my-7 w-full md:w-2/4 rounded-md hover:bg-[#fbbc07] hover:text-white duration-300">
@@ -237,6 +267,7 @@ const ProductDetails = () => {
                 )}
               </div>
             </TabPanel>
+            <TabPanel></TabPanel>
           </Tabs>
         </div>
         <div className="basis-1/4">

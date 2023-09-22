@@ -1,7 +1,35 @@
 import { Link } from "react-router-dom";
 import { BiShoppingBag } from "react-icons/bi";
+import { useEffect, useState } from "react";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { IoIosClose } from "react-icons/io";
+import { toast } from "react-toastify";
 
 const Header = () => {
+  const [cartProducts, setCartProducts] = useState([]);
+  const totalQuantity = cartProducts.reduce((sum, product) => sum + product.quantity, 0);
+  const total = cartProducts.reduce((sum, product) => sum + product.quantity * product.price, 0).toFixed(2);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/cart")
+      .then((res) => res.json())
+      .then((data) => setCartProducts(data));
+  }, []);
+
+  const handleDeleteProduct = (id) => {
+    fetch(`http://localhost:5000/cart/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.deletedCount > 0) {
+          const remaining = cartProducts.filter((product) => product._id !== id);
+          setCartProducts(remaining);
+          toast.success("Product successfully removed from the cart!");
+        }
+      });
+  };
+
   const navItems = (
     <>
       <li className="text-xl">
@@ -58,7 +86,7 @@ const Header = () => {
               {/* Page content here */}
               <label htmlFor="my-drawer" className="mr-10 cursor-pointer hover:text-[#70be4e] duration-300">
                 <span className="absolute badge badge-sm indicator-item h-5 w-5 ms-3  bg-[#fbbc06]  text-white rounded-full">
-                  7
+                  {totalQuantity}
                 </span>
                 <BiShoppingBag className="relative top-4 text-3xl" />
               </label>
@@ -71,12 +99,34 @@ const Header = () => {
                   Shopping <span className="text-[#fbbc08]">Cart</span>
                 </h2>
                 <div className="divider"></div>
-                <div className="w-full">
+                {cartProducts.map((product) => (
+                  <div key={product._id} className="flex items-center mb-5">
+                    <div className="w-24 relative">
+                      <Link to={`/product-details/${product.productId}`}>
+                        <img className="w-20" src={product.img} alt="" />
+                      </Link>
+                      <AiOutlineCloseCircle
+                        onClick={() => handleDeleteProduct(product._id)}
+                        className="absolute top-0 text-lg hover:text-[#ff0d01] duration-300 cursor-pointer"
+                      />
+                    </div>
+                    <div className="text-base">
+                      <Link to={`/product-details/${product.productId}`}>
+                        <p className="hover:text-[#70be4e] duration-300">{product.name}</p>
+                      </Link>
+                      <p className="mt-2 flex items-end">
+                        {product.quantity}
+                        <IoIosClose className="text-xl" />${product.price}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+                <div className="w-full mt-10">
                   <div>
                     <hr />
                     <div className="flex justify-between my-4 text-lg">
                       <p>Total:</p>
-                      <p>$165.00 USD</p>
+                      <p>${total}</p>
                     </div>
                     <hr />
                   </div>

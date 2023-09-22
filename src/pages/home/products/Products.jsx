@@ -17,7 +17,7 @@ const Products = () => {
           setLoading(false);
         }
       });
-  }, [activeTab]);
+  }, [activeTab, loading]);
 
   return (
     <div className="max-w-screen-2xl mx-auto px-5">
@@ -33,6 +33,7 @@ const Products = () => {
             <Tab
               onClick={() => {
                 setActiveTab("feature");
+                setLoading(true);
               }}
               className={
                 activeTab === "feature"
@@ -45,6 +46,7 @@ const Products = () => {
             <Tab
               onClick={() => {
                 setActiveTab("best-sellers");
+                setLoading(true);
               }}
               className={
                 activeTab === "best-sellers"
@@ -57,6 +59,7 @@ const Products = () => {
             <Tab
               onClick={() => {
                 setActiveTab("new-arrivals");
+                setLoading(true);
               }}
               className={
                 activeTab === "new-arrivals"

@@ -1,15 +1,14 @@
 import SubHeader from "../../components/shared/subHeader/SubHeader";
-import { AiOutlineCloseCircle, AiOutlinePlus } from "react-icons/ai";
-import { HiMinusSm } from "react-icons/hi";
 import { FcCalendar } from "react-icons/fc";
-import { VscEdit } from "react-icons/vsc";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link, useLoaderData } from "react-router-dom";
+import CartRow from "./CartRow";
 
 const Cart = () => {
+  const products = useLoaderData();
   const [startDate, setStartDate] = useState(new Date());
-  const [quantity, setQuantity] = useState(0);
 
   return (
     <div className="max-w-screen-2xl mx-auto px-5">
@@ -19,7 +18,7 @@ const Cart = () => {
           {/* head */}
           <thead>
             <tr className=" border text-sm text-[#333]">
-              <th className=" border">Image</th>
+              <th className=" border w-[10%">Image</th>
               <th className=" border w-[20%]">Product</th>
               <th className=" border">Price</th>
               <th className=" border w-[30%]">Quantity</th>
@@ -28,42 +27,18 @@ const Cart = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className=" border">manik</td>
-              <td className=" border">manik</td>
-              <td className=" border">manik</td>
-              <td className=" border flex justify-center">
-                <button
-                  onClick={() => setQuantity(quantity - 1)}
-                  disabled={quantity === 0}
-                  className="border-s-2 rounded-s-full px-1"
-                >
-                  <HiMinusSm />
-                </button>
-                <p className="w-20 py-2 border">{quantity}</p>
-                <button onClick={() => setQuantity(quantity + 1)} className="border-e-2 rounded-e-full px-1">
-                  <AiOutlinePlus />
-                </button>
-              </td>
-              <td className=" border">manik</td>
-              <td className=" border">
-                <div className=" flex justify-evenly">
-                  <button className="text-2xl hover:text-[#70be4e] duration-200">
-                    <VscEdit />
-                  </button>
-                  <button className="text-2xl hover:text-[#70be4e] duration-200">
-                    <AiOutlineCloseCircle />
-                  </button>
-                </div>
-              </td>
-            </tr>
+            {products.map((product) => (
+              <CartRow key={product._id} product={product}></CartRow>
+            ))}
           </tbody>
         </table>
       </div>
       <div className="md:flex justify-between mt-8">
-        <button className="mb-5 bg-[#70be4e] px-8 py-3 rounded-full uppercase text-white hover:bg-[#fbbc08] duration-300">
-          continue shopping
-        </button>
+        <Link to={"/products"}>
+          <button className="mb-5 bg-[#70be4e] px-8 py-3 rounded-full uppercase text-white hover:bg-[#fbbc08] duration-300">
+            continue shopping
+          </button>
+        </Link>
         <div>
           <button className="bg-[#70be4e] px-8 py-3 rounded-full uppercase text-white me-10 hover:bg-[#fbbc08] duration-300">
             update cart
