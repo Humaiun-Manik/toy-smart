@@ -17,7 +17,7 @@ const Products = () => {
           setLoading(false);
         }
       });
-  }, [activeTab, loading]);
+  }, [activeTab]);
 
   return (
     <div className="max-w-screen-2xl mx-auto px-5">
@@ -28,9 +28,9 @@ const Products = () => {
       {loading ? (
         <Loading />
       ) : (
-        <Tabs focusTabOnClick={false}>
-          <TabList className="my-10 flex flex-col md:flex-row justify-center">
-            <Tab
+        <div className="my-10 ">
+          <div className="flex flex-col md:flex-row justify-center">
+            <button
               onClick={() => {
                 setActiveTab("feature");
                 setLoading(true);
@@ -42,8 +42,8 @@ const Products = () => {
               }
             >
               Featured
-            </Tab>
-            <Tab
+            </button>
+            <button
               onClick={() => {
                 setActiveTab("best-sellers");
                 setLoading(true);
@@ -55,8 +55,8 @@ const Products = () => {
               }
             >
               Best Sellers
-            </Tab>
-            <Tab
+            </button>
+            <button
               onClick={() => {
                 setActiveTab("new-arrivals");
                 setLoading(true);
@@ -68,36 +68,14 @@ const Products = () => {
               }
             >
               New Arrivals
-            </Tab>
-          </TabList>
-          <TabPanel className="grid md:grid-cols-3 gap-10">
-            {activeTab === "feature" && (
-              <>
-                {products.slice(0, 6).map((product) => (
-                  <Product key={product._id} product={product}></Product>
-                ))}
-              </>
-            )}
-          </TabPanel>
-          <TabPanel className="grid md:grid-cols-3 gap-10">
-            {activeTab === "best-sellers" && (
-              <>
-                {products.slice(0, 6).map((product) => (
-                  <Product key={product._id} product={product}></Product>
-                ))}
-              </>
-            )}
-          </TabPanel>
-          <TabPanel className="grid md:grid-cols-3 gap-10">
-            {activeTab === "new-arrivals" && (
-              <>
-                {products.slice(0, 6).map((product) => (
-                  <Product key={product._id} product={product}></Product>
-                ))}
-              </>
-            )}
-          </TabPanel>
-        </Tabs>
+            </button>
+          </div>
+          <div className="grid md:grid-cols-3 gap-10">
+            {products.slice(0, 6).map((product) => (
+              <Product key={product._id} product={product}></Product>
+            ))}
+          </div>
+        </div>
       )}
     </div>
   );
